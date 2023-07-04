@@ -1,0 +1,27 @@
+.PrevVal-blue {
+    background-color: #10c4e4;
+    border-color: grey;
+    color: black;
+}
+
+.PrevVal-yellow {
+    background-color: #e4cf10;
+    border-color: grey;
+    color: black;
+}
+
+.PrevVal-white {
+    background-color: white;
+    border-color: grey;
+    color: black;
+}
+
+.Weathle-header {
+    text-emphasis: true;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(40px + 2vmin);
+    color: white;
+}

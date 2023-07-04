@@ -1,0 +1,1 @@
+export const rapidKey = 'ADD_YOUR_RAPID_KEY';

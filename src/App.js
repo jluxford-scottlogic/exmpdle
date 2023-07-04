@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-import { ExampleComponent } from './Components/ExampleComponent';
+import { Title } from './Components/Title';
+import { Button } from './Components/Button';
+import { useState } from 'react';
+import { Game } from './Game';
 
 function App() {
+
+  const [startGame, startGameFunc] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-          <ExampleComponent extraText="Extra Text" />
-        </a>
+        <Title/>
+        {!startGame ? 
+            <Button name={"Start New Game"} activateFunc={() => startGameFunc(true)}/> 
+          : 
+            <Game />
+        }
       </header>
     </div>
   );
